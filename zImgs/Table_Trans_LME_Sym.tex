@@ -1,0 +1,51 @@
+%Table_Trans_LME_Sym.tex
+\begin{tabular}{lrrrr} %S[table-comparator = true]}
+	\toprule  
+	& \multicolumn{1}{c}{Coefficient} & \multicolumn{1}{c}{\i{SE}} & 
+	\multicolumn{1}{c}{\i{z}} & \multicolumn{1}{c}{\i{p} $> |$\i{z}$|$}
+	\\ \midrule
+	\multicolumn{5}{l}{Fixed Effects} \\
+	\IE Intercept & 579.935 & 37.922 & 15.29 & $<$ 0.001\\
+	\IE Group & -64.272 & 53.512 & -1.20 & 0.230\\
+	\IE Sym  & -226.298 & 38.995 & -5.80 & $<$ 0.001\\
+	\IE Group * Sym & 68.220 & 54.780 & 1.25 & 0.213\\
+	\IE Type & -127.500 & 39.360 & -3.24 & 0.001\\
+	\IE Group * Type & 28.568 & 55.262 & 0.52 & 0.605\\
+	\IE Sym * Type 		   & 318.268 & 55.505 & 5.73 & $<$ 0.001\\
+	\IE Group * Sym * Type & -191.247 & 77.733 & -2.46 & 0.014\\
+	\multicolumn{5}{l}{Random Effects} \\
+	\IE Subject & & & & \\
+	\IE\IE \i{SD} (Intercept) & 14127.97 & 4142.92\tnote{b} &  & \\
+	\IE\IE \i{SD} (Type) & 0.086 & \multicolumn{1}{c}{NA\tnote{a}} &  & \\
+	\IE\IE \i{SD} (Sym) & <0.001 & \multicolumn{1}{c}{NA\tnote{a}}  &  & \\
+	\IE \i{SD} (Item) & 59037.34 & 6312.91\tnote{b} & & \\
+	\IE  \i{SD} (Placement) & \multicolumn{2}{c}{NA\tnote{c}}  & & \\
+	\bottomrule
+	\end{tabular} 
+	\begin{tablenotes}
+	    \small
+	      \item \i{Note}. \i{SD} = Standard Deviation; \i{SE} = Standard Error; \i{p} = p-value significance; Sym = Symmetricity; Placement = Target Placement relative to video. \item[a] As subject slopes contribute minimally to the model, standard deviations are not calculated. These components are preserved in model to parallel Experiment 1 Symmetricity analysis. \item[b] Approximate value provided by nearly identical model, missing subject slopes. All p-values across models remain the same. \item[c] Calculation suppressed due to computational limitations. \end{tablenotes}
+
+
+
+	% \multicolumn{5}{l}{Fixed Effects} \\
+	% \IE Intercept & 589.913 & 27.091 & 21.78 & 0\\
+	% \IE Group & -31.766 & 38.293 & -0.83 & 0.407\\
+	% \IE Sym  & -156.598 & 19.158 & -8.17 & 0\\
+	% \IE Group * Sym & 37.006 & 26.974 & 1.37 & 0.17\\
+	% \IE Type & -39.016 & 19.21 & -2.03 & 0.042\\
+	% \IE Group * Type & 4.013 & 27.042 & 0.15 & 0.882\\
+	% \IE Sym * Type & 164.094 & 27.257 & 6.02 & 0\\
+	% \IE Group * Sym * Type & -82.758 & 38.278 & -2.16 & 0.031\\
+	% \multicolumn{5}{l}{Random Effects} \\
+	% \IE Subject & & & & \\
+	% \IE\IE \i{SD} (Intercept) & 11573.09 & 2818.531 &  & \\
+	% \IE\IE \i{SD} (Type) & 0.003 & \multicolumn{1}{c}{NA\tnote{a}} &  & \\
+	% \IE\IE \i{SD} (Sym) & < 0.001 & \multicolumn{1}{c}{NA\tnote{a}}  &  & \\
+	% \IE \i{SD} (Item) & 14455.24 & \multicolumn{1}{c}{NA\tnote{a}}  &  & \\
+	% \IE  \i{SD} (Placement) &  \multicolumn{2}{c}{NA\tnote{b}} & & \\
+	% \bottomrule
+	% \end{tabular} 
+	% \begin{tablenotes}
+	%     \small
+	%       \item \i{Note}. \i{SD} = Standard Deviation; \i{SE} = Standard Error; \i{p} = p-value significance; Sym = Symmetricity; Placement = Target Placement relative to video. \item[a] As subject slopes contribute minimally to the model, standard deviations are not calculated. These components are preserved in model to parallel Experiment 1 Symmetricity analysis. \item[b] Calculation suppressed due to computational limitations. \end{tablenotes} 

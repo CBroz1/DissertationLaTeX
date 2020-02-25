@@ -1,0 +1,35 @@
+%Table_Trans_LME_Cond.tex
+\begin{tabular}{lrrrr} %S[table-comparator = true]}
+	\toprule  
+	& \multicolumn{1}{c}{Coefficient} & \multicolumn{1}{c}{\i{SE}} & 
+	\multicolumn{1}{c}{\i{z}} & \multicolumn{1}{c}{\i{p} $> |$\i{z}$|$}
+	\\ \midrule
+	\multicolumn{5}{l}{Fixed Effects} \\
+	\IE Intercept & 459.809 & 27.607 & 16.66 & $<$ 0.001\\
+	\IE Group & -25.039 & 38.966 & -0.64 & 0.520\\
+	\multicolumn{5}{l}{\IE Cond}\\
+	\IE\IE Blur - Normal & -7.595 & 15.366 & -0.49 & 0.621\\
+	\IE\IE Hold - Normal & 160.806 & 16.333 & 9.85 &  $<$ 0.001\\
+	\multicolumn{5}{l}{\IE Group * Cond}\\
+	\IE\IE Blur - Normal & 29.148 & 21.546 & 1.35 & 0.176\\
+	\IE\IE Hold - Normal & 4.721 & 22.896 & 0.21 & 0.837\\
+	\IE Type & 24.656 & 18.967 & 1.30 & 0.194\\
+	\IE Group * Type & -62.550 & 26.51 & -2.36 & 0.018\\
+	\multicolumn{5}{l}{\IE Cond * Type} \\
+	\IE\IE Blur - Normal & 47.974 & 21.409 & 2.24 & 0.025\\
+	\IE\IE Hold - Normal & 10.266 & 21.396 & 0.48 & 0.631\\
+	\multicolumn{5}{l}{\IE Group * Cond * Type} \\
+	\IE\IE Blur - Normal & 43.188 & 29.901 & 1.44 & 0.149\\
+	\IE\IE Hold - Normal & 33.356 & 29.796 & 1.12 & 0.263\\
+	\multicolumn{5}{l}{Random Effects} \\
+	\IE Subject & & & & \\
+	\IE\IE \i{SD} (Intercept) & 12270.34 & 3085.94 &   & \\
+	\IE\IE \i{SD} (Type) & 0.003 & 0.019 &   & \\
+	\IE\IE \i{SD} (Cond) & 223.12 & 189.012 &   & \\
+	\IE \i{SD} (Item) & 17150.34 & 1300.198 &   & \\
+	\IE  \i{SD} (Placement) & \multicolumn{2}{c}{NA\tnote{a}} & & \\
+	\bottomrule
+	\end{tabular} 
+	\begin{tablenotes}
+	    \small
+	      \item \i{Note}. \i{SD} = Standard Deviation; \i{SE} = Standard Error; \i{p} = p-value significance; Cond = Video condition; Placement = Target Placement relative to video; NA = Not available. \item[a] Calculation suppressed due to computational limitations. \end{tablenotes} 

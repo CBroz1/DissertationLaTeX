@@ -1,0 +1,149 @@
+
+%Package&Style
+    %%
+        \documentclass[12pt,letterpaper,oneside]{article} %changed from twoside
+        \usepackage{apacite, filecontents, indentfirst, longtable, supertabular, 
+            setspace, mathptmx, titlesec, fancyhdr, pdfpages, dcolumn, %xtab,
+            ragged2e, gensymb, textcomp, lipsum, fmtcount, layout,
+            chngcntr, multirow, array, scrextend, calc, booktabs, siunitx}
+        \usepackage[english]{babel}
+        \usepackage[letterpaper,                       % dimensions
+            left=1in,right=1in,top=1in,bottom=.5in,%
+            footskip=.75in-12pt,
+            includefoot]{geometry}
+            \setlength{\headheight}{14.49998pt}         %late add to shut up warning
+            \setlength\parindent{0.5in}
+            \maxdepth=0pt % because some instance of overfull \vbox
+        \usepackage[utf8]{inputenc}                     %for accent
+        \usepackage[T1]{fontenc}                        %for accent
+        \usepackage[left]{lineno}                       % line number
+            %\pagewiselinenumbers                       % Line Number
+        \usepackage{apacite}
+        % \usepackage[semicolon]{natbib}                  %semicolon separatsion
+        % \usepackage[longnamesfirst]{natbib}
+        % \usepackage[natbib, maxcitenames=3, style=apa]{biblatex} % added late 5am
+            % \setlength\bibitemsep{2\itemsep} % old
+        \usepackage{etoolbox}                           % blockquote
+            \AtBeginEnvironment{quote}{\singlespacing\small}
+        \usepackage{graphicx}                           %Imgs
+            \graphicspath{ {zImgs/} }
+            \usepackage{textcomp}
+        \usepackage{fancyhdr}                           %Headders
+            \pagestyle{fancy}
+            \renewcommand{\headrulewidth}{0pt}
+            \lhead{ }
+            \rhead{ }
+            % \lhead{Forward Modeling in the Manual Modality}
+            % \rhead{Brozdowski}
+            %\lhead{Forward Modeling and Sign Language}
+            % \usepackage[mmdd]{datetime2}
+            % \usepackage[firstpage]{draftwatermark}
+            % \usepackage[final]{draftwatermark}
+            % \usepackage{draftwatermark}
+                % \SetWatermarkLightness{0.5}
+                % \SetWatermarkScale{1.2}
+        % parskip distance
+            % \setlength{\parskip}{1cm plus4mm minus3mm}
+        %fignumbering
+            \counterwithin{figure}{section}
+            \counterwithin{table}{section}
+            \renewcommand{\thefigure}{\thesection.\padzeroes[2]{\decimal{figure}}}
+            \renewcommand{\thetable}{\thesection.\padzeroes[2]{\decimal{table}}}
+            \providecommand\phantomsection{}
+        %Caption
+            \usepackage[font={small,md},format=plain,labelfont=bf,up]{caption}
+        %redefining
+            \usepackage{letltxmacro}                       % i italics
+                \LetLtxMacro{\i}{\textit}
+            \newcommand{\subsubsubsection}[1]{\textbf{\i{#1.}}}
+            \newcommand{\sectionbreak}{\clearpage}
+            \setlength{\RaggedRightParindent}{\parindent}
+            \def\chsq{$\chi^2$} 
+            \def\txreg{\textsuperscript{\tiny\textregistered}\ }
+            \def\mytitle{Forward Modeling in the Manual Modality: \\
+                Linguistic and Nonlinguistic Predictions by American Sign Language Users}
+            \def\myname{Christopher R. Brozdowski}
+            \def\sc{.28}
+            %significance
+                \def\nonS{$^{ns}$} 
+                \def\marS{$^\dagger$} %.1
+                \def\oneS{$^*$}       %.05
+                \def\twoS{$^{**}$}    %.01
+                \def\thrS{$^{***}$}   %.001
+        %table of contents formatting
+            % \renewcommand{\contentsname}{\centering Table of Contents}
+            % \usepackage[titles]{tocloft}
+            \usepackage{tocloft}
+            %Contents
+                \addto\captionsenglish{\renewcommand{\contentsname}{Table of Contents}}
+                \cftpagenumbersoff{section}
+                \renewcommand{\cfttoctitlefont}{\hfill\normalsize}
+                \renewcommand{\cftaftertoctitle}{\hfill}
+                \renewcommand{\cftloftitlefont}{\hfill\normalsize}
+                \renewcommand{\cftafterloftitle}{\hfill}
+                \renewcommand{\cftlottitlefont}{\hfill\normalsize}
+                \renewcommand{\cftafterlottitle}{\hfill}
+                \renewcommand{\cftsecfont}{\normalfont}
+                \renewcommand{\cftsecpagefont}{\normalfont}
+                % \cftsetindents{subsection}{1.5em}{2.3em} %default?
+            %Fig/Tab
+                \renewcommand{\cftfigpresnum}{\figurename\enspace}
+                \renewcommand{\cftfigaftersnum}{:}
+                \newlength{\figlen}
+                \settowidth{\figlen}{\cftfigpresnum\cftfigaftersnum}
+                \addtolength{\cftfignumwidth}{\figlen}
+                \setlength{\cftfigindent}{0pt}
+
+                \renewcommand{\cfttabpresnum}{\tablename\enspace}
+                \renewcommand{\cfttabaftersnum}{:}                
+                \newlength{\tablen}  
+                \settowidth{\tablen}{\cfttabpresnum\cfttabaftersnum}
+                \addtolength{\cfttabnumwidth}{\tablen}
+                \setlength{\cfttabindent}{0pt} 
+
+            \usepackage[flushleft]{threeparttable}
+            \newcommand{\IE}[1][1]{% indent entry
+              \hspace{1em}\ignorespaces
+            }
+            %\usepackage{siunitx} %align by number
+            \usepackage{diagbox} % \diagbox[linewidth=2pt]{Low}{High}
+            % links in TOC
+            %\usepackage[linktocpage=true]{hyperref}
+        % float management, keep in section %\FloatBarrier
+            \usepackage[section]{placeins}
+        % frame margins
+            % \usepackage{showframe}
+            % 
+        % hypthenation
+            \hyphenation{Neu-ro-sci-ence Ste-ph-en modal-ity Sch-warz
+            hand-ed-ness Co-hen Bren-tari Sto-koe Don-off Cond-Order}
+            \setlength{\emergencystretch}{2.1em}
+        % bib spacing 
+            \newlength{\bibparskip}\setlength{\bibparskip}{0pt}
+            \let\oldthebibliography\thebibliography
+            \renewcommand\thebibliography[1]{%
+              \oldthebibliography{#1}%
+              \setlength{\parskip}{\bibitemsep}%
+              \setlength{\itemsep}{\bibparskip}%
+            }
+
+            \setlength{\bibitemsep}{\baselineskip}
+        %longtable
+            \usepackage{threeparttablex}
+\begin{document} %\layout
+    % Change to front, Body, App. Make tex for body
+    \input{zCh0_Front.tex}
+    \input{zCh1_Body.tex}
+
+    %%Antiquated
+        % \input{zCh1_Intro.tex}
+        % \input{zCh2_Exp1.tex}
+        % \input{zCh3_Exp2.tex}
+        % \input{zCh4_Exp3.tex}
+        % \input{zCh5_Exp4.tex}
+        % \input{zCh6_Disc.tex}
+    
+    \input{zCh7_App.tex}
+    
+    % \input{ztemp_Ch7_App.tex}
+\end{document} 

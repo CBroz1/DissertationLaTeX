@@ -1,0 +1,216 @@
+% zCh0_Front.tex
+
+% Change TOC behavior
+    \cftsetindents{subsection}{0em}{2.3em}
+%Prenumerical
+    \begin{titlepage}
+        \begin{center}
+            SAN DIEGO STATE UNIVERSITY \\
+            UNIVERSITY OF CALIFORNIA SAN DIEGO
+            \vfill \mytitle \vfill
+            A dissertation submitted in partial of the requirements\\ for the degree Doctor of Philosophy
+            \vfill in \vfill
+            Language and Communicative Disorders
+            \vfill by \vfill \myname \vfill
+            % \today \vfill %remove later
+        \end{center}
+        \begin{flushleft}    
+        Committee in charge:\\~\\
+            \hspace{.5in}San Diego State University \\~\\
+                \hspace{1in}Professor Karen Emmorey, Chair\\
+                \hspace{1in}Professor Ksenija Marinkovic\\
+                \hspace{1in}Professor Ignatius Nip\\~\\
+            \hspace{.5in}University of California, San Diego \\~\\
+                \hspace{1in}Professor Seana Coulson\\
+                \hspace{1in}Professor Rachel Mayberry\\
+        \end{flushleft}
+        \begin{center}
+            \the\year       
+        \end{center}
+        \end{titlepage}
+        \pagebreak  
+    %Copyright
+        \thispagestyle{empty}
+        \doublespacing
+        \null\vfill
+        \begin{center}
+            Copyright \\
+            \myname, \the\year \\
+            %Some Rights Reserved: Noncommercial, Attribution.
+            All Rights Reserved.
+        \end{center}
+        \pagebreak
+    %Signature
+        % \includepdf[pages=-,pagecommand={},width=\textwidth]{Signature_Completed.pdf}
+        %%\addcontentsline{toc}{subsection}{Front matter}
+        % \bookmark[level=part,dest=frontmatter]{Front Matter} %\phantomsection
+        \addcontentsline{toc}{subsection}{Signature Page} %was subsection
+        \thispagestyle{plain}
+        \setcounter{page}{3}
+        \renewcommand{\thepage}{\roman{page}}
+        \newgeometry{left=2in,right=2in,top=2.5in,
+            bottom=.5in,
+            footskip=.75in-12pt,
+            includefoot}
+        \vfill
+            {\tiny This file was compiled from the tex posted to github and is not the original. Any edits do not reflect the finalized dissertation. See: \href{https://github.com/CBroz1/DissertationLaTeX}{github} and \href{https://escholarship.org/uc/item/2kk8z7sx}{Original publication}. \par}
+
+            \noindent The dissertation of \myname\ is approved, and it is acceptable in quality and form for publication on microfilm and electronically: \\~\\
+            
+            % \singlespacing
+            \noindent\rule{\textwidth}{1pt}
+            \vspace{2\baselineskip}
+            %\hspace*{\fill}Dr. Seana Coulson 
+            
+            \noindent\rule{\textwidth}{1pt}
+            \vspace{2\baselineskip}
+            %\hspace*{\fill}Dr. Ksenija Marinkovic 
+                        
+            \noindent\rule{\textwidth}{1pt}
+            \vspace{2\baselineskip}
+            %\hspace*{\fill}Dr. Rachel Mayberry
+            
+            \noindent\rule{\textwidth}{1pt}
+            \vspace{2\baselineskip}
+            %\hspace*{\fill}Dr. Ignatius Nip
+            
+            \noindent\rule{\textwidth}{1pt}
+            \vspace{2\baselineskip}
+            % \hspace*{\fill}Dr. Karen Emmorey, Chair
+            \hspace*{\fill} Chair
+
+            \begin{center}
+                \doublespacing
+                San Diego State University \\
+                University of California San Diego \\
+                \the\year
+            \end{center}
+        \vfill
+        \restoregeometry
+        \pagebreak
+    %Dedication, Eipgraph - Optional
+        % \thispagestyle{plain}
+        % \addcontentsline{toc}{subsection}{Dedication}
+        % \centerline{Dedication}
+        %     This is my dedication.
+        % \newpage
+        % \thispagestyle{plain}
+        % \addcontentsline{toc}{subsection}{Epigraph}
+        % \centerline{Epigraph}
+        %     % I encountered parsimony once. It's an elegant wildflower sprung from the soil of forgotten theories, swaying in the wind. Under too close an empirical eye, it will only wilt. 
+        % \pagebreak
+    % Table of Contents
+        \begin{singlespace}
+        \addcontentsline{toc}{subsection}{Table of Contents}
+        \tableofcontents
+        \thispagestyle{plain}
+        \end{singlespace}
+        \pagebreak
+    % List of Abbreviations, Fig, Tables
+        \thispagestyle{plain}
+        \addcontentsline{toc}{subsection}{List of Abbreviations}
+        \centerline{List of Abbreviations}   
+            \hfill\\ \hfill
+            \begin{tabular}{rl} \centering
+                ASL & American Sign Language \\
+                \i{df} & degrees of freedom \\
+                \i{MS} & mean square\\
+                \i{MM} & Motor Memory: A novel task presented in Chapter \ref{ch:supp} \\
+                \i{p} & p-value \\
+                P\&G & Pickering and Garrod, in reference to the 2013 publication:\\
+                   & \i{Forward models and their implications for production, comprehension, and dialogue} \\
+                \i{SD} & Standard Deviation \\
+                \i{SE} & Standard Error \\
+                \i{SS} & Type III Sum of Squares \\
+                TAMI-h & Test of Ability in Movement Imagery for Hands \\
+                WM & Working Memory \\
+            \end{tabular}
+        \newpage
+        \listoffigures
+        \newpage
+        \listoftables
+        \newpage
+    %Acknowledgements (doublespace, .5in indent), Vita
+        \RaggedRight \raggedbottom
+        %\thispagestyle{plain}
+        \addcontentsline{toc}{subsection}{Acknowledgements}
+        \doublespacing
+        \centerline{Acknowledgements}  
+            \thispagestyle{plain} 
+            I am so grateful to all those who have helped push my work forward, both through conscious effort and without ever knowing they had. My mentor and advisor, Dr. Karen Emmorey, is deserving of the utmost thanks and gratitude for her wise scientific guidance, as well as her dedication to helping me to become a better writer, no matter how tedious the process. You make the time for students and turn them into diligent scientists, while still being such an acclaimed researcher on a diversity of topics. It's amazing. 
+            I also very grateful for the other members of my committee, Dr. Rachel Mayberry, Dr. Seana Coulson, Dr. Ksenija Marinkovic and Dr. Ignatius Nip. Thank you for your support and for challenging me to push my ideas further. Thank you to the San Diego State faculty members, Dr. J{\"o}rg Matt and Dr. Stephanie Ri{\`e}s, who set aside precious time to help with statistical models and software.\par
+            I am grateful to the family that is the Laboratory for language and Cognitive Neuroscience, members of short or long term, members past and present. Allison Bassett, Cindy Farnady, Stephen McCullough, Kristen Secora, Brittany Lee, Emily Kubicek, Zed Sevcikova, Jill Weisberg, and Marcel Geizen have all helped, in ways big and small, to either facilitate some portion of this project or give me the tools to do so myself. And I certainly couldn't have completed such ambitious experiments without dedicated research assistants and coders, Cami Miner, Israel Montano, Francynne Pomperada, and Karina Maralit. Thank you to all the participants come and gone, and come back again. And I'd like to gratefully acknowledge the funding that supported my work over the course of my graduate studies. \par
+            I would like to thank the all the teams behind my favorite software, Sublime, R, Stata, SPSS, \LaTeX, Word, and especially Dropbox version recovery. And thank you to the the countless casual experts who turn StackOverflow into the annals of public troubleshooting.
+            But, more importantly, I'd like to thank the emotional support system that kept me searching and digging for those answers. To family, parents, siblings, grandmother, aunt and uncle, who nurtured my curious nature from the very start. And an especially heartfelt thanks to Lisa, who continues to show me the value of joy and balance. Love is the real source of inspiration\ldots plus a little future vision. \par
+            Chapters 2, 3 and 4, in part, are currently being prepared for submission for publication of the material. Brozdowski, Chris; Emmorey, Karen. The dissertation author was the primary investigator and author of these materials. \par 
+            \thispagestyle{plain}
+        \newpage
+        \thispagestyle{plain}
+        \addcontentsline{toc}{subsection}{Vita}
+        \centerline{VITA} \vspace{\baselineskip}
+            \noindent PROFESSIONAL EXPERIENCE
+            \singlespacing   
+            \begin{tabular}{ll} \centering
+                2018 & Doctor of Philosophy, San Diego State University \\
+                          & \hspace{.25in} University of California San Diego \\ [1ex]
+
+                2013-2018 & Graduate Student, San Diego State University \\
+                          & \hspace{.25in} Laboratory for Language and Cognitive Neuroscience\\ & \hspace{.5in} Dr. Karen Emmorey \\ [1ex]
+
+                2013 & Bachelor of Science, University of Connecticut \\  
+                          & \hspace{.25in} Cognitive Science \\
+                          & \hspace{.25in} Linguistics \& Psychology \\  [1ex]
+                2010-2013 & Research Assistant, University of Connecticut \\
+                        \linespread{.5} 
+                          & \hspace{.25in} Computational Cognitive Neuroscience of Language Lab \\ & \hspace{.5in} Dr. James Magnuson \\
+                          & \hspace{.25in} Language Creation Lab, Dr. Marie Coppola \\
+                          & \hspace{.25in} Sign Linguistics \& Language Acquisition Lab\\ & \hspace{.5in} Dr. Diane Lillo-Martin 
+                
+            \end{tabular} 
+            \\~\\
+        \noindent PRESENTATAIONS \\ \vspace{\baselineskip}
+            \hangindent=1.5\parindent Brozdowski, C., Emmorey, K. (2018). Predicting human action: Shadowing linguistic and non-linguistic body movements. Oral presentation at the 8th Conference of the International Society for Gesture Studies. Cape Town, South Africa. \\ [1ex] 
+            \hangindent=1.5\parindent Brozdowski, C., Emmorey, K. (2016). Co-Thought Gesture in Bimodal Bilinguals. Poster presented at the 12th Conference on Theoretical Issues in Sign Language Research. Melbourne, Australia. \\ [1ex] 
+            \hangindent=1.5\parindent Brozdowski, C., Emmorey, K. (2015). Egocentric and Allocentric Mental Rotation in Sign Language Users. Paper presented at the 19th annual Doctoral Student Colloquium for the SDSU/UCSD Joint Doctoral Program in Language and Communicative Disorders, San Diego, California. \\ [1ex] 
+            \hangindent=1.5\parindent Brozdowski, C., Gordils, J., Magnuson, J. (2013). Contra the Qualitatively Different Representation Hypothesis (QDRH), Concrete Concepts Activate Associates Faster than Abstract Concepts. Paper presented at the Annual Meeting of the Psychonomic Society, Toronto, Canada. 
+            % \hangindent=1.5\parindent Brozdowski, C. Gordils, J., Magnuson, J. (2013). Using Text Instead of Pictures in the Visual World Paradigm: Phonological, Semantic, and Perceptual Similarity Effects. Poster presented at the Annual Meeting of the Psychonomic Society, Toronto, Canada. 
+            %\hangindent=1.5\parindent Tabor, W., Richie, R., Brozdowski, C., Dankowicz, H. (2013). Human coordination in a group number game exhibits physics-like energy loss and symmetry breaking. Paper presented at the Workshop on Collective Behaviors and Social Dynamics at the 12th European Conference on Artificial Life, Taormina, Italy. 
+            \\~\\
+        \noindent FIELDS OF STUDY \\ \vspace{\baselineskip}
+            \indent Major Field: Psycholinguistics \\
+            \indent\indent American Sign Language Production and Comprehension \\
+            \indent\indent Gesture Production and Comprehension \\
+            \indent\indent Neuroscience of Spatial Perspective  \\
+            \doublespacing 
+        \newpage
+    %Abstract
+        % abstract top of page
+            % \newgeometry{top=2in}
+            \thispagestyle{plain}
+            \newgeometry{left=1in,right=1in,top=2in} \doublespacing
+            %\lhead{Running Head: Forward Modeling in the Manual Modality}
+            \addcontentsline{toc}{subsection}{Abstract of the Dissertation}
+            \begin{center} \begin{singlespace}
+            % \vspace{2in}
+            ABSTRACT OF THE DISSERTATION
+            \\~\\~\\ \mytitle
+            \\~\\~\\ by \\~\\~\\ \myname
+            \\~\\ Doctor of Philosophy in Language and Communicative Disorders\\~\\
+            San Diego State University, \the\year \\
+            University of California San Diego, \the\year \\~\\
+            Professor Karen Emmorey, Chair \\
+            \end{singlespace} \end{center} 
+        % Actual
+            \hspace{\parindent}Motor simulation has emerged as a mechanism for both predictive action perception and language comprehension. By deriving a motor command for an observed stimulus, and engaging in covert imitation, individuals can predictively represent the outcome of unfolding action as a Forward Model. In the context of these proposals, language is described as a highly systematized form of action that relies on the same simulation mechanisms. Some evidence also points to motor stimulation as a supplementary mechanism only under noisy or high-demand circumstances. Evidence of simulation can be derived from error patterns that defer to attributes of the predicting individual, as \i{Egocentric Bias}, or through differential responses to \i{Symmetricity}, one- vs. two-handed stimuli. Additionally, the sign language literature provides evidence that signers generate predictive representations based on information prior to the onset of a target sign. It is currently unclear, however, what features of transitions during the fluid sign stream make such predictions possible.\par
+            \restoregeometry \doublespacing Experiment 1 examines the role of (a) motor simulation during action prediction, (b) linguistic status (i.e., pseudosigns vs. grooming gesture) in predictive representations and (c) language experience (i.e., signers vs. nonsigners) in generating predictions. As Egocentric Bias was only observed for non-linguistic stimuli, and only for nonsigners, Experiments 1 does not support strong motor simulation proposals and instead highlights the role of stimulus familiarity. The Experiment 2 focuses on movement and handshape as possible informative transitional information. While movement facilitated predictions regardless of language background and linguistic status of the stimulus, only sign language users relied on transitional handshape information and only for linguistic stimuli. Experiments 3 and 4 examine predictive processing through the lens of motor memory and motor imagery to further investigate the hypotheses that sign language users (a) only exhibit improved performance in linguistic contexts, and (b) are not sufficiently taxed by the present tasks to engage motor simulation during predictive processing. Only participants without sign language experience (a) showed evidence of using motor simulation, and (b) recruited memory and imagery abilities in generating predictive representations. While predicting the future can be difficult, sign language experience seems to shape how some predictions are made.\par
+            \begin{flushleft}
+            \i{Keywords:} predictive models, action and language, sign language, gesture
+            \end{flushleft}
+            % \lhead{Forward Modeling in the Manual Modality}
+            % \newgeometry{top=1in}
+            \newpage
+    % renew toc features
+        \addtocontents{toc}{\setlength{\cftsubsecindent}{1.5em}}
+        
+
+
