@@ -2,7 +2,7 @@
 
 **All of the LaTeX source code to compile my dissertation.**
 
-I used my dissertation writing process as an opportunity to learn about using LaTeX to generate pdfs. The main document is _Broz_Dissertation.tex, and it calls upon the other tex, bib, and png files in the directory to compile the completed file.
+I used my dissertation writing process as an opportunity to learn about using LaTeX to generate pdfs. The final product should be viewed via [eScholarship.org](https://escholarship.org/uc/item/2kk8z7sx). The main document is _Broz_Dissertation.tex, and it calls upon the other tex, bib, and png files in the directory to compile the completed file.
 
 ## Quick start guide
 
