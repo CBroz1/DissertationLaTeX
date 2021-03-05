@@ -21,6 +21,7 @@ I used my dissertation writing process as an opportunity to learn about using La
 - Tables: Does your statistics software allow you to export as plain text? Then it's theoretically possible to write a script or make an excel table that takes text and outputs tables. Whether or not this is efficient depends on how many 'final' versions of your analysis you have.
 - Citation management:
 	- Google scholar will give you the BibTeX of anything, if you select it in your settings
+	- [JabRef](https://www.jabref.org/) can help manage notes in .bib format, and export to MS Word xls format
 	- Your .bib file doesn't need to be in any order, but it *really* helps to have consistent names - and no conflicting names
 	- [This](https://packagecontrol.io/packages/Indent%20Respectful%20Sort) Sublime Text package will allow you to do indent respectful sort to put your bibs in order.
 - Tools for referencing other parts of your document: 
